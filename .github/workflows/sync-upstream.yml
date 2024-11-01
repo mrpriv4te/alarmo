@@ -27,7 +27,7 @@ jobs:
       run: git remote add upstream https://github.com/nielsfaber/alarmo.git
 
     - name: Fetch Upstream Changes
-      run: git fetch upstream --tags
+      run: git fetch upstream --tags --force
 
     - name: Check Latest Release from Upstream
       id: get-upstream-release
